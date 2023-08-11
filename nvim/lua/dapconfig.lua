@@ -97,14 +97,17 @@ function M.setup()
         d = {
             name = "Debug",
             a = { "<cmd>lua require'dap'.restart()<cr>", "Restart" },
+            b = { "<cmd>Telescope dap list_breakpoints<cr>", "Telescope list breakpoints" },
             c = { "<cmd>lua require'dap'.continue()<cr>", "Continue" },
-            C = { "<cmd>lua require'dap'.set_breakpoint(vim.fn.input '[Condition] > ')<cr>", "Conditional Breakpoint" },
+            C = { "<cmd>lua require'dap'.set_breakpoint(vim.fn.input '[Condition] > ')<cr>", 
+                  "Conditional Breakpoint" },
+            d = { "<cmd>lua require'dap'.focus_frame()<cr>", "Focus current frame" },
+            e = { "<cmd>lua require'dapui'.eval()<cr>", "Evaluate" },
             i = { "<cmd>lua require'dap'.step_into()<cr>", "Step Into" },
             o = { "<cmd>lua require'dap'.step_over()<cr>", "Step Over" },
             j = { "<cmd>lua require'dap'.up()<cr>", "Go up the stack frame" },
             k = { "<cmd>lua require'dap'.down()<cr>", "Go down the stack frame" },
             f = { "<cmd>Telescope dap frames<cr>", "Telescope frames" },
-            b = { "<cmd>Telescope dap list_breakpoints<cr>", "Telescope list breakpoints" },
             r = { "<cmd>lua  require('dapui').float_element('repl', { width = 100, height = 20, enter = true, position = 'center' })<cr>", "Toggle Repl" },
             w = { "<cmd>lua  require('dapui').float_element('watches', { width = 100, height = 20, enter = true, position = 'bottom' })<cr>", "Toggle Watch" },
             v = { "<cmd>lua require'telescope'.extensions.dap.variables{}<cr>", "Toggle Repl" },
@@ -114,7 +117,6 @@ function M.setup()
             u = { "<cmd>lua require'dap'.step_out()<cr>", "Step Out" },
             h = { "<cmd>lua require'dap.ui.widgets'.hover()<cr>", "Hover Variables" },
             U = { "<cmd>lua require'dapui'.toggle()<cr>", "Toggle UI" },
-            e = { "<cmd>lua require'dapui'.eval()<cr>", "Evaluate" },
         },
     }
 

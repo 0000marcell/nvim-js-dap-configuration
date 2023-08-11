@@ -19,22 +19,23 @@ restart vim
 
 # Breakpoints
 
-## start the debugger and options
+## start the debugger
 ## toggle breakpoints
 ## continue execution
 ## search breakpoints and jump between them
+## focus frame 
 ## go up and down in the stack frames
-## clear breakpoints, need to add this to the configuration dap.clear_breakpoints() hotkey uppercase X
-## add conditional breakpoints (find an invariant) a place and a condition
+## clear breakpoints
+## conditional breakpoints
 ## restart
-## show conditional breakpoint functionality
 
 # Inspect and Watch
 
 ## show text dap
 ## show global variables panel
-## show repl 
+## hover
 ## show watches panel  
+## show repl 
 
 # Configuration
 

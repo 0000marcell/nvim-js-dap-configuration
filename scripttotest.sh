@@ -2,8 +2,7 @@
 backup_path="$HOME/.config/nvimbackup"
 
 if [ -d "$backup_path" ]; then
-    echo "The $backup_path folder already exists, solve this conflict before continuing."
-    exit 1
+    echo "The $backup_path folder already exists, skipping."
 else
     echo "Moving your current configuration to $backup_path"
     mv $HOME/.config/nvim $backup_path
@@ -21,4 +20,3 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 git clone git@github.com:0000marcell/nvim-js-dap-test.git
 # install example code dependencies
 cd nvim-js-dap-test
-bundle install
